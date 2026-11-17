@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hello, session</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="label">hello, session<br>@php-demo</div>
+
+<main class="sheet">
+  <div class="light">
+    <nav>
+      <a href="#how">how it works</a>
+      <span class="right">login</span>
+    </nav>
+
+    <section class="hero">
+      <h1>Who's there?</h1>
+      <form method="post" action="hello.php" class="row">
+        <input class="name-input" type="text" name="name" placeholder="your name" aria-label="your name" required>
+        <button class="pill" type="submit">say hello</button>
+        <span class="tag">php sessions</span>
+      </form>
+    </section>
+
+    <section id="how">
+      <h2 class="section">(how it works)</h2>
+      <div class="grid">
+        <div class="card"><h3>enter name</h3><p>your name is sent with the form and saved in the session</p></div>
+        <div class="card"><h3>hello page</h3><p>greets you by name and shows the start time at the top right</p></div>
+        <div class="card"><h3>log out</h3><p>ends the session and shows how long you used the app</p></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+</body>
+</html>
